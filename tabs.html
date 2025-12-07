@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery UI Tabs</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #tabs {
+        font-size: 14px;
+      }
+
+      #tabs div {
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tab-1">Enlace 1</a></li>
+          <li><a href="#tab-2">Enlace 2</a></li>
+          <li><a href="#tab-3">Enlace 3</a></li>
+          <li><a href="#tab-4">Enlace 4</a></li>
+        </ul>
+        <div id="tab-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+          reprehenderit, rerum, dicta eum adipisci repellendus beatae nemo unde
+          officia optio quia nihil perspiciatis fugit nisi ipsum non corrupti
+          nam voluptates?
+        </div>
+        <div id="tab-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+          delectus, quis distinctio pariatur voluptatum eveniet dolore hic
+          molestias culpa reprehenderit nam magni? Aliquid nostrum illo quasi
+          quidem ipsa assumenda ut.
+        </div>
+        <div id="tab-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          repellendus, magnam nihil omnis et pariatur dolorum a incidunt
+          veritatis facilis enim consectetur. Corrupti quidem aut ut nemo quos
+          beatae laborum.
+        </div>
+        <div id="tab-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+          voluptatum, quos, voluntas, eius inventore quis eligendi.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var x;
+      x = $(document);
+      x.ready(iniciar);
+
+      function iniciar() {
+        var x = $("#tabs");
+        x.tabs();
+      }
+    </script>
+  </body>
+</html>
